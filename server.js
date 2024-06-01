@@ -12,3 +12,13 @@ const io = socketio(server);
 
 // Set static folder
 app.use(express.static(path.join(__dirname, "public")));
+
+const gmName = "Game";
+
+// Worker to handle game logic
+const worker = new Worker(path.join(__dirname, 'worker.js'));
+
+
+const PORT = process.env.PORT || 3000;
+
+server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
