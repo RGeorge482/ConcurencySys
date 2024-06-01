@@ -150,3 +150,65 @@ a {
   height: 40px;
   width: 100%;
 }
+
+
+.join-main select {
+  font-size: 16px;
+  padding: 5px;
+  height: 40px;
+  width: 100%;
+}
+
+.join-main .btn {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 2px;
+  width: 500px;
+  height: 500px;
+  margin: 20px auto;
+}
+
+.game-grid div {
+  background-color: #fcf0d3;
+  border: 1px solid #333;
+}
+
+.myGame {
+  display: block;
+}
+
+.monsters {
+  align-items: center;
+}
+
+.monsters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.monsters img {
+  max-width: 5%;
+  max-height: 5%;
+  height: auto;
+  flex: 1 1 30%;
+  margin: 10px;
+}
+
+@media (max-width: 700px) {
+  .game-main {
+    display: block;
+  }
+
+  .game-sidebar {
+    display: none;
+  }
+}
+
