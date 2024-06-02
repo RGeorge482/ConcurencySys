@@ -64,7 +64,7 @@ function outputUsers(users) {
 }
 
 
-// Grag and drop implemenation
+// Drag and drop implemenation
 function dragMoveListener(event) {
   var target = event.target;
   var x = (parseFloat(target.getAttribute("data-x")) || 0) + event.dx;
